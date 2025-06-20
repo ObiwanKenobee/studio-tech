@@ -40,15 +40,15 @@ export function ActionProposalCard({ civicScroll, impactResult }: ActionProposal
         {!civicScroll && !impactResult && (
           <p className="text-muted-foreground">Proposals will be guided by the generated scroll and impact simulation.</p>
         )}
-         <p className="text-sm text-foreground border-t pt-4 mt-4">
-          Based on the information gathered, develop actionable steps. Consider:
+         <div className="text-sm text-foreground border-t pt-4 mt-4">
+          <p>Based on the information gathered, develop actionable steps. Consider:</p>
           <ul className="list-disc list-inside ml-4 mt-2">
             <li>What specific policies could address the issues raised?</li>
             <li>Which community groups should be involved in implementing solutions?</li>
             <li>How can potential negative impacts be mitigated?</li>
             <li>What resources are needed for the proposed actions?</li>
           </ul>
-        </p>
+        </div>
       </CardContent>
     </Card>
   );
