@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -86,12 +87,16 @@ Ethical Tags: ${ethicalTags}
           </Button>
         </form>
 
-        {generatedPetition && (
+        {generatedPetition ? (
           <div className="mt-6 space-y-2">
             <h3 className="font-semibold font-headline">Generated Petition Draft:</h3>
             <pre className="p-3 border rounded-md bg-muted/50 whitespace-pre-wrap text-sm">
               {generatedPetition}
             </pre>
+          </div>
+        ) : (
+          <div className="mt-6">
+             <p className="text-sm text-muted-foreground">Your petition draft will appear here once generated.</p>
           </div>
         )}
       </CardContent>

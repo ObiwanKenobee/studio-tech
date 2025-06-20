@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from 'react';
@@ -93,6 +94,9 @@ export default function CivicScribePage() {
       <main className="flex-grow container mx-auto p-4 md:p-8 space-y-8">
         <section id="voice-input-section" className="bg-card shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-headline font-semibold mb-4 text-center">Start by Recording Your Voice</h2>
+          <p className="text-muted-foreground text-center mb-6">
+            Civic Scribe helps you transform your spoken ideas into clear text, translate them, and draft civic documents. Your voice matters in shaping policy.
+          </p>
           <VoiceInput onVoiceRecorded={handleVoiceRecorded} isProcessing={isLoading.voiceProcessing} />
         </section>
 
